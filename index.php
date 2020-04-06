@@ -46,8 +46,6 @@
 </html>
 
 <script>
-
-
     let xhr = new XMLHttpRequest;
     var store = 1;
     xhr.open('GET', 'https://efb30d56.ngrok.io/api/stores/', true)
@@ -61,7 +59,7 @@
                   var arrItems = [];
                     $.each(data, function (index, value) {
                        // alert(value.name);
-                        d1.insertAdjacentHTML('beforeend',  " <li class='col-4-L col-6-M col-12-SM'><img class='logoClas' src='"+value.raw_hero_url+"'><h2>"+value.name+"</h2> <p> "+value.status.toUpperCase()+" <br>  "+value.location.address+" "+value.location.address+" <br> "+value.contact_emails+" </p> <hr> <a href='menus/"+value.id+"'><button type='button' class='btn btn-primary '>VIEW RESTAURANT</button> </a> </li>" );
+                        d1.insertAdjacentHTML('beforeend',  "<li class='col-4-L col-6-M col-12-SM'><img class='logoClas' src='"+value.raw_hero_url+"'><h2>"+value.name+"</h2> <p> "+value.status.toUpperCase()+" <br>  "+value.location.address+" "+value.location.address+" <br> "+value.contact_emails+" </p> <hr> <a href='menus.php/"+value.id+"'><button type='button' class='btn btn-primary '>VIEW RESTAURANT</button> </a> </li>" );
 
                     });
 
