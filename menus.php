@@ -73,7 +73,7 @@ $id = substr(strrchr($url, '/'), 1);
                   var arrItems = [];
                     $.each(data, function (index, value) {
                        // alert(value.name);
-                        d1.insertAdjacentHTML('beforeend',  " <li class='col-4-L col-6-M col-12-SM'><h2>"+value.title+"</h2> <p> "+value.catch_phrase+"</p> <hr> <a href='../menusItems/"+value.id+"'><button type='button' class='btn btn-primary '>Menu Items</button> </a> </li>" );
+                        d1.insertAdjacentHTML('beforeend',  " <li class='col-4-L col-6-M col-12-SM'><h2>"+value.title+"</h2> <p> "+value.catch_phrase+"</p> <hr> <a href='../menusItems.php/"+value.id+"'><button type='button' class='btn btn-primary '>Menu Items</button> </a> </li>" );
 
                     });
 
