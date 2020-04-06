@@ -34,7 +34,7 @@ $id = substr(strrchr($url, '/'), 1);
       </li>
 
       <li class="nav-item">
-        <a class="nav-link" href="../../../orders/<?php echo $id ?>">ORDERS</a>
+        <a class="nav-link" href="../../../orders.php/<?php echo $id ?>">ORDERS</a>
       </li>
 
     </ul>
